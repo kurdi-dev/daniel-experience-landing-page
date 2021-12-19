@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -44,7 +45,11 @@ export default function Home() {
             <p className='md:text-lg text-base'>Hi@thedanielexperience.com</p>
             <p className='md:text-lg text-base'>+964 750 244 9783</p>
           </div>
-          <button className='btn btn-main'>Download Portfolio</button>
+          <button className='btn btn-main' onClick=''>
+            <a href='/portfolio.pdf' target='_blank'>
+              Download Portfolio
+            </a>
+          </button>
         </div>
       </main>
 
